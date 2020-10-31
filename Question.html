@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Questionnaire</title>
+
+</head>
+<body>
+
+    <h1>Form</h1>
+
+    <form action="display3.php" method="post">
+
+        <h2>Name Input</h2>
+        <div>
+
+            <label for="yourName">Your Name</label>
+            <input id="yourName" name="yourName" type="yourName"><br>
+
+        </div>
+
+        <h2>Body Area</h2>
+        <div>
+            <label for="fullBody">Body</label><br>
+            <textarea name="fullBody" id="fullBody" rows="4" cols="50">
+            </textarea><br>
+        </div>
+
+        <h2> Multiple Select Dropdown</h2>
+        <div>
+            <label for="skills">Skills</label><br>
+            <select name="skills[]" id="skills" size="4" multiple>
+                <option value="sing">Sing</option>
+                <option value="dance">Dance</option>
+                <option value="dive">Dive</option>
+                <option value="run">Run</option>
+                <option value="jump">Jump</option>
+                <option value="swim">Swim</option>
+
+            </select>
+        </div>
+        <br><br>
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
