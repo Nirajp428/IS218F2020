@@ -4,7 +4,12 @@
 $email = filter_input(INPUT_POST,'email');
 $password = filter_input(INPUT_POST, 'password');
 
-if (strlen($password) >= 8) {
+$passwordlength =(strlen($password));
+
+if (empty($password)){
+    echo "Form is invalid";
+}
+if ($passwordlength > 8) {
     echo "Email: $email <br>";
     echo "Password: $password <br>";
 
