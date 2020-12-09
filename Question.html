@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Questionnaire</title>
+
+</head>
+<body>
+
+<h1>Form</h1>
+
+<form action="display3.php" method="post">
+
+    <h2>Name Input</h2>
+    <div>
+
+        <label for="yourName">Your Name</label>
+        <input id="yourName" name="yourName"><br>
+
+    </div>
+
+    <h2>Body Area</h2>
+    <div>
+        <label for="fullBody">Body</label><br>
+        <textarea name="fullBody" id="fullBody" rows="4" cols="50">
+            </textarea><br>
+    </div>
+
+    <h2> Skills </h2>
+    <div>
+        <input type="checkbox" name="skills[]" value="sing" id="sing" >
+        <label for="sing">Sing</label><br>
+
+        <input type="checkbox" name="skills[]" value="dance" id="dance" >
+        <label for="dance">Dance</label><br>
+
+        <input type="checkbox" name="skills[]" value="dive" id="dive" >
+        <label for="dive">Dive</label><br>
+
+        <input type="checkbox" name="skills[]" value="run" id="run" >
+        <label for="run">Run</label><br>
+
+        <input type="checkbox" name="skills[]" value="jump" id="jump" >
+        <label for="jump">Jump</label><br>
+
+        <input type="checkbox" name="skill[]" value="swim" id="swim" >
+        <label for="swim">Swim</label><br>
+
+    </div>
+    <br><br>
+    <input type="submit" value="Submit">
+</form>
+</body>
+</html>
